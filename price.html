@@ -1,0 +1,345 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>料金表 | Mana Oase｜名古屋のプライベートエステサロン</title>
+    <meta name="description" content="Mana Oaseの料金表。オイルマッサージ60分¥7,000〜（ご新規様）、よもぎ蒸し30分¥3,000。名古屋市則武新町のプライベートエステサロン。現金・クレジットカード・PayPay対応。">
+    <meta name="keywords" content="エステ料金,オイルマッサージ料金,よもぎ蒸し料金,名古屋エステ,Mana Oase">
+    <meta name="robots" content="index, follow">
+    <link rel="canonical" href="https://manaoase.com/price.html">
+    <!-- OGP -->
+    <meta property="og:title" content="料金表 | Mana Oase｜名古屋のプライベートエステサロン">
+    <meta property="og:description" content="オイルマッサージ・よもぎ蒸しの料金表。ご新規様限定お試し価格あり。名古屋市則武新町。">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://manaoase.com/price.html">
+    <meta property="og:image" content="https://manaoase.com/ogp.png">
+    <meta property="og:locale" content="ja_JP">
+    <meta property="og:site_name" content="Mana Oase">
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Serif+JP:wght@400;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            background: linear-gradient(160deg, #F7F3EC 0%, #D4E8D4 100%);
+            min-height: 100vh;
+        }
+
+        .price-lead {
+            text-align: center;
+            padding: 0 20px 50px;
+            max-width: 600px;
+            margin: 0 auto;
+        }
+
+        .price-lead p {
+            font-size: 0.9rem;
+            color: #7A7065;
+            line-height: 2;
+        }
+
+        .price-badge {
+            display: inline-block;
+            background: linear-gradient(135deg, #5C7E60, #3d5e41);
+            color: white;
+            font-size: 0.75rem;
+            letter-spacing: 0.15em;
+            padding: 6px 18px;
+            border-radius: 20px;
+            margin-bottom: 16px;
+        }
+
+        .price-block__title {
+            font-size: 1.4rem;
+            font-weight: 700;
+            color: #3D3830;
+            margin-bottom: 6px;
+            letter-spacing: 0.05em;
+        }
+
+        .price-block__title-en {
+            font-size: 0.75rem;
+            color: #8BAF8E;
+            letter-spacing: 0.2em;
+            text-transform: uppercase;
+            display: block;
+            margin-bottom: 20px;
+        }
+
+        .price-block__sub {
+            font-size: 0.85rem;
+            font-weight: 700;
+            color: white;
+            background: linear-gradient(135deg, #5C7E60, #3d5e41);
+            display: inline-block;
+            padding: 4px 16px;
+            border-radius: 20px;
+            margin: 16px 0 12px;
+            letter-spacing: 0.1em;
+        }
+
+        .price-row {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 14px 20px;
+            background: #F7F3EC;
+            border-radius: 8px;
+            margin-bottom: 8px;
+            border-left: 3px solid #8BAF8E;
+        }
+
+        .price-row.featured {
+            background: linear-gradient(135deg, #E4EFE4, #F0F7F0);
+            border-left: 3px solid #5C7E60;
+        }
+
+        .price-label {
+            font-size: 0.95rem;
+            color: #3D3830;
+            font-weight: 700;
+        }
+
+        .price-value {
+            font-size: 1.15rem;
+            font-weight: 700;
+            color: #5C7E60;
+        }
+
+        .price-block {
+            margin-bottom: 24px;
+            border: 1px solid #B8D1BA;
+            border-radius: 16px;
+            padding: 28px;
+            background: white;
+            box-shadow: 0 4px 20px rgba(92,126,96,0.08);
+            position: relative;
+            overflow: hidden;
+        }
+
+        .price-block::before {
+            content: '';
+            position: absolute;
+            top: 0; left: 0; right: 0;
+            height: 4px;
+            background: linear-gradient(90deg, #5C7E60, #8BAF8E, #B8D1BA);
+        }
+
+        .price-block.highlight {
+            border-color: #5C7E60;
+            box-shadow: 0 4px 24px rgba(92,126,96,0.18);
+        }
+
+        .new-price-tag {
+            background: #FFF3E0;
+            border: 1px solid #FFB74D;
+            border-radius: 8px;
+            padding: 10px 16px;
+            font-size: 0.8rem;
+            color: #E65100;
+            margin-bottom: 16px;
+            text-align: center;
+            letter-spacing: 0.05em;
+        }
+
+        .payment-img-placeholder {
+            background: #F7F3EC;
+            border: 2px dashed #B8D1BA;
+            border-radius: 8px;
+            padding: 40px 20px;
+            text-align: center;
+        }
+
+        .placeholder-text {
+            color: #A49A8E;
+            font-size: 0.85rem;
+        }
+
+        .price-cta {
+            text-align: center;
+            padding: 40px 20px 80px;
+        }
+
+        .price-cta p {
+            font-size: 0.88rem;
+            color: #7A7065;
+            margin-bottom: 20px;
+            letter-spacing: 0.05em;
+        }
+
+        .price-note {
+            background: #E4EFE4;
+            border-radius: 12px;
+            padding: 16px 20px;
+            font-size: 0.8rem;
+            color: #5C7E60;
+            line-height: 2;
+            margin-top: 16px;
+            text-align: left;
+        }
+
+        .notice-list {
+            padding-left: 1.4rem;
+            margin: 0;
+        }
+
+        .notice-list li {
+            font-size: 0.85rem;
+            color: #7A7065;
+            line-height: 1.9;
+            margin-bottom: 10px;
+        }
+
+        .cancel-policy {
+            display: inline-block;
+            margin-top: 6px;
+            background: #FFF3E0;
+            border: 1px solid #FFB74D;
+            border-radius: 6px;
+            padding: 4px 12px;
+            font-size: 0.82rem;
+            color: #E65100;
+        }
+
+        @media (max-width: 768px) {
+            .price-block { padding: 20px; }
+        }
+    </style>
+</head>
+<body>
+
+    <header class="navbar">
+        <div class="logo">Mana oase</div>
+        <input type="checkbox" id="nav-toggle" class="nav-toggle-input">
+        <label class="hamburger" for="nav-toggle">
+            <span></span>
+            <span></span>
+            <span></span>
+        </label>
+        <label class="nav-overlay" for="nav-toggle"></label>
+        <nav class="nav-menu">
+            <ul>
+                <li><a href="index.html">Top</a></li>
+                <li><a href="price.html">料金表</a></li>
+                <li><a href="products.html">取り扱い商品</a></li>
+            </ul>
+        </nav>
+        <a href="https://lin.ee/xZ9Cr0p" target="_blank" class="line-btn line-btn--desktop">
+            <img src="https://scdn.line-apps.com/n/line_add_friends/btn/ja.png" alt="友だち追加" height="36">
+        </a>
+    </header>
+
+    <section class="page-hero">
+        <h1 class="page-title">＝ 料金表 ＝</h1>
+    </section>
+
+    <section class="price-section">
+
+        <!-- よもぎ蒸し -->
+        <div class="price-block">
+            <h2 class="price-block__title">よもぎ蒸し</h2>
+            <span class="price-block__title-en">Yomogi Steam</span>
+            <div class="price-row">
+                <span class="price-label">30分</span>
+                <span class="price-value">¥3,000</span>
+            </div>
+        </div>
+
+        <!-- ボディーケアマッサージ -->
+        <div class="price-block highlight">
+            <h2 class="price-block__title">ボディーケアマッサージ<br>（オールハンド）</h2>
+            <span class="price-block__title-en">Body Care Massage</span>
+
+            <h3 class="price-block__sub">ご新規様</h3>
+            <div class="new-price-tag">ご新規様限定　お試し価格</div>
+            <div class="price-row featured">
+                <span class="price-label">60分</span>
+                <span class="price-value">¥7,000</span>
+            </div>
+            <div class="price-row featured">
+                <span class="price-label">90分</span>
+                <span class="price-value">¥11,000</span>
+            </div>
+            <div class="price-row featured">
+                <span class="price-label">120分</span>
+                <span class="price-value">¥15,000</span>
+            </div>
+
+            <h3 class="price-block__sub">リピーター様</h3>
+            <div class="price-row">
+                <span class="price-label">60分</span>
+                <span class="price-value">¥9,000</span>
+            </div>
+            <div class="price-row">
+                <span class="price-label">90分</span>
+                <span class="price-value">¥13,000</span>
+            </div>
+            <div class="price-row">
+                <span class="price-label">120分</span>
+                <span class="price-value">¥17,000</span>
+            </div>
+
+            <div class="price-note">
+                ✔ よもぎ蒸しを同時にご利用いただく場合はコース選択後にオプションより追加をお願いいたします。<br>
+                ✔ キャンセル・ご質問はLINEからお願いいたします。
+            </div>
+        </div>
+
+        <!-- その他 -->
+        <div class="price-block">
+            <h2 class="price-block__title">その他</h2>
+            <span class="price-block__title-en">Other</span>
+            <div class="price-row">
+                <span class="price-label">延長30分</span>
+                <span class="price-value">¥4,000</span>
+            </div>
+        </div>
+
+        <!-- お支払い -->
+        <div class="price-block">
+            <h2 class="price-block__title">お支払い</h2>
+            <span class="price-block__title-en">Payment</span>
+            <div class="payment-img-wrap" style="background:#F7F3EC; border-radius:12px; padding:20px 24px; text-align:center;">
+                <img src="S__108371979.jpg" alt="お支払い方法" style="width:85%; max-width:320px; object-fit:contain; border-radius:8px; display:block; margin:0 auto;">
+            </div>
+        </div>
+
+        <!-- 注意事項 -->
+        <div class="price-block">
+            <h2 class="price-block__title">ご利用にあたっての注意事項</h2>
+            <span class="price-block__title-en">Important Notice</span>
+            <ol class="notice-list">
+                <li>当サロンはリラクゼーションを目的とした施術を行っております。医療行為およびそれに準ずる施術は行っておりませんので、あらかじめご了承ください。</li>
+                <li>当店は風俗店ではございません。性的サービス・それに類する行為は一切お断りしております。</li>
+                <li>セラピストが不快と感じる言動・接触があった場合、施術を中断し、今後のご利用をお断りさせていただく場合がございます。</li>
+                <li>妊娠中の方、通院・治療中の方、皮膚炎や感染症のある方は、施術をお断りさせていただく場合がございます。</li>
+                <li>発熱・体調不良・飲酒後のご来店は、安全面を考慮し施術をお断りする場合がございます。</li>
+                <li>ご予約時間に遅れた場合、施術時間が短くなる場合がございますのでご了承ください。</li>
+                <li>貴重品の管理はお客様ご自身でお願いいたします。紛失・盗難等につきましては責任を負いかねます。</li>
+                <li>無断キャンセルの場合、次回以降のご予約をお断りさせていただきます。</li>
+                <li>当サロンではご予約枠を確保している関係上、キャンセルポリシーを設けております。<br>
+                    <span class="cancel-policy">▫️ 当日キャンセル：コース料金の100％</span>
+                </li>
+            </ol>
+        </div>
+
+    </section>
+
+    <div class="price-cta">
+        <p>まずはお気軽にご予約ください</p>
+        <a href="https://tol-app.jp/s/zo8xfq9tl715y2r8gp1n" target="_blank" class="btn">ご予約はこちら</a>
+    </div>
+
+    <footer>
+        <a href="https://lin.ee/xZ9Cr0p" target="_blank" class="line-btn line-btn--footer">
+            <img src="https://scdn.line-apps.com/n/line_add_friends/btn/ja.png" alt="友だち追加" height="36">
+        </a>
+        <p>&copy; 2026 Mana Oase. All Rights Reserved.</p>
+    </footer>
+
+    <div class="fixed-bar">
+        <a href="https://lin.ee/xZ9Cr0p" target="_blank" class="fixed-bar__btn fixed-bar__btn--line">LINE友だち追加</a>
+        <a href="https://tol-app.jp/s/zo8xfq9tl715y2r8gp1n" target="_blank" class="fixed-bar__btn fixed-bar__btn--reserve">ご予約はこちら</a>
+    </div>
+
+</body>
+</html>
