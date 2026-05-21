@@ -5,6 +5,12 @@
     box-sizing: border-box;
 }
 
+img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+}
+
 body {
     font-family: 'Noto Serif JP', serif;
     line-height: 1.8;
@@ -541,4 +547,14 @@ footer {
     .fixed-bar__btn--reserve { background-color: #5C7E60; color: #fff; }
 
     .product-card { width: 100%; max-width: 320px; }
+
+    .products-grid { flex-direction: column; align-items: center; }
+
+    .menu-item__image { height: auto; min-height: 200px; }
+
+    .menu-item__image img { height: 200px; object-fit: cover; width: 100%; }
+
+    .news-img { width: 100%; }
+
+    .price-row { flex-wrap: wrap; gap: 4px; }
 }
