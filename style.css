@@ -400,6 +400,12 @@ body {
     line-height: 0;
 }
 
+.line-btn img {
+    display: inline;
+    height: 36px;
+    width: auto;
+}
+
 .line-btn--footer {
     display: block;
     margin-bottom: 16px;
