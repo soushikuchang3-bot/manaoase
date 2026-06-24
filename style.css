@@ -504,6 +504,7 @@ footer {
         padding: 16px 20px;
     }
 
+    .hero { background-position: center top; min-height: 100svh; }
     .hero-content h1 { font-size: 1.6rem; }
     .hero-content p { font-size: 0.9rem; padding: 0 16px; }
     .btn { padding: 12px 32px; font-size: 0.85rem; }
