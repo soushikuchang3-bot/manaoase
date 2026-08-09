@@ -559,8 +559,9 @@ footer {
 /* フェードインアニメーション */
 .fade-in {
     opacity: 0;
-    transform: translateY(24px);
-    transition: opacity 0.7s ease, transform 0.7s ease;
+    transform: translateY(14px);
+    transition: opacity 1.1s cubic-bezier(0.16, 1, 0.3, 1),
+                transform 1.1s cubic-bezier(0.16, 1, 0.3, 1);
 }
 
 .fade-in--visible {
@@ -1173,10 +1174,10 @@ body.page-menu {
 
 /* ── ブロックタイトル ── */
 .price-block__title {
-    font-size: 1.25rem;
-    letter-spacing: 0.2em;
+    font-size: 1.35rem;
+    letter-spacing: 0.15em;
     color: #2A2420;
-    font-weight: 400;
+    font-weight: 700;
     margin-bottom: 28px;
     padding-bottom: 0;
     border-left: none;
@@ -1227,10 +1228,10 @@ body.page-menu {
 
 /* ── ラベル ── */
 .price-label {
-    font-size: 0.97rem;
+    font-size: 1.05rem;
     color: #3D3830;
     letter-spacing: 0.05em;
-    font-weight: 400;
+    font-weight: 700;
 }
 
 /* ── 価格値 ── */
@@ -1270,9 +1271,9 @@ body.page-menu {
 }
 
 .price-trow span:first-child {
-    font-size: 0.97rem;
+    font-size: 1.05rem;
     color: #3D3830;
-    font-weight: 400;
+    font-weight: 700;
 }
 
 .price-trow span:not(:first-child) {
@@ -1338,17 +1339,17 @@ body.page-menu {
         padding: 36px 0;
     }
     .price-block__title {
-        font-size: 1.1rem;
-        letter-spacing: 0.15em;
+        font-size: 1.2rem;
+        letter-spacing: 0.1em;
     }
     .price-label {
-        font-size: 0.92rem;
+        font-size: 1.0rem;
     }
     .price-value {
         font-size: 1.15rem;
     }
     .price-trow span:first-child {
-        font-size: 0.92rem;
+        font-size: 1.0rem;
     }
     .price-trow span:not(:first-child) {
         font-size: 1.05rem;
@@ -1401,9 +1402,9 @@ body.page-menu {
 /* スクロール入場アニメーション用クラス */
 .lux-fade {
     opacity: 0;
-    transform: translateY(20px);
-    transition: opacity 1.6s cubic-bezier(0.25, 0.46, 0.45, 0.94),
-                transform 1.6s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+    transform: translateY(12px);
+    transition: opacity 1.4s cubic-bezier(0.16, 1, 0.3, 1),
+                transform 1.4s cubic-bezier(0.16, 1, 0.3, 1);
 }
 
 .lux-fade.is-visible {
