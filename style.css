@@ -1412,6 +1412,54 @@ body.page-menu {
     transform: translateY(0);
 }
 
+/* ── ご新規様列の強調 ── */
+.price-thead span:nth-child(2) {
+    color: #9A6F2A;
+    font-weight: 700;
+    font-size: 0.72rem;
+}
+
+.price-trow--new span:nth-child(2) {
+    color: #9A6F2A;
+    position: relative;
+}
+
+.price-trow--new span:nth-child(2)::after {
+    content: '';
+    position: absolute;
+    bottom: -2px;
+    left: 0;
+    right: 0;
+    height: 1px;
+    background: rgba(154, 111, 42, 0.25);
+}
+
+/* ── オプションブロック ── */
+.price-block--option {
+    background: #F5F0E8;
+    border-radius: 8px;
+    padding-left: 22px;
+    padding-right: 22px;
+    border-bottom: none;
+    margin-top: 8px;
+}
+
+.price-block--option .price-block__title-en {
+    color: #A49A8E;
+}
+
+.price-block--option .price-block__title {
+    font-size: 1.1rem;
+    font-weight: 400;
+    color: #7A7065;
+    letter-spacing: 0.2em;
+}
+
+.price-block--option .price-value {
+    font-size: 1.12rem;
+    color: #5A5148;
+}
+
 /* ── Conceptセクション（#aboutのみに適用される固有ルール） ── */
 #about.container {
     max-width: 680px;
