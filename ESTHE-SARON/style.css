@@ -706,14 +706,14 @@ footer {
 
     .products-grid { flex-direction: column; align-items: center; }
 
-    .price-row { flex-wrap: wrap; gap: 4px; }
+    .price-row { gap: 12px; }
 }
 
 /* ===== メニュー・料金 / コース詳細ページ共通 ===== */
 html { scroll-behavior: smooth; }
 
 body.page-menu {
-    background: linear-gradient(160deg, #F7F3EC 0%, #D4E8D4 100%);
+    background: #F5F0E8;
     min-height: 100vh;
 }
 
@@ -742,20 +742,32 @@ body.page-menu {
 }
 
 .price-block__title {
-    font-size: 1.4rem;
-    font-weight: 700;
-    color: #3D3830;
-    margin-bottom: 6px;
-    letter-spacing: 0.05em;
+    font-size: 1.2rem;
+    font-weight: 400;
+    color: #2A2420;
+    margin-bottom: 24px;
+    letter-spacing: 0.06em;
+    border-left: none;
+    padding-left: 0;
+}
+
+.price-block__title::after {
+    content: '';
+    display: block;
+    width: 28px;
+    height: 1px;
+    background: #8A7E72;
+    margin-top: 14px;
 }
 
 .price-block__title-en {
-    font-size: 0.75rem;
-    color: #8BAF8E;
-    letter-spacing: 0.2em;
+    font-size: 0.6rem;
+    color: #9A9080;
+    letter-spacing: 0.35em;
     text-transform: uppercase;
     display: block;
-    margin-bottom: 20px;
+    margin-bottom: 6px;
+    padding-left: 0;
 }
 
 .price-block__sub {
@@ -774,64 +786,67 @@ body.page-menu {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 14px 20px;
-    background: #F7F3EC;
-    border-radius: 8px;
-    margin-bottom: 8px;
-    border-left: 3px solid #8BAF8E;
+    padding: 13px 0;
+    background: transparent;
+    border-radius: 0;
+    margin-bottom: 0;
+    border-left: none;
+    border-bottom: 1px solid #DDD5C8;
 }
 
 .price-row.featured {
-    background: linear-gradient(135deg, #E4EFE4, #F0F7F0);
-    border-left: 3px solid #5C7E60;
+    background: transparent;
+    border-left: none;
 }
 
 .price-label {
     font-size: 0.95rem;
-    color: #3D3830;
-    font-weight: 700;
+    color: #2A2420;
+    font-weight: 400;
+    flex: 1;
 }
 
 .price-value {
-    font-size: 1.15rem;
+    font-size: 1.25rem;
     font-weight: 700;
     color: #5C7E60;
+    flex-shrink: 0;
+    white-space: nowrap;
+    text-align: right;
 }
 
 .price-block {
-    margin-bottom: 24px;
-    border: 1px solid #B8D1BA;
-    border-radius: 16px;
-    padding: 28px;
-    background: white;
-    box-shadow: 0 4px 20px rgba(92,126,96,0.08);
+    margin-bottom: 0;
+    padding: 44px 0;
+    border-bottom: 1px solid #CEC6BA;
     position: relative;
-    overflow: hidden;
+}
+
+.price-block:last-child {
+    border-bottom: none;
 }
 
 .price-block::before {
-    content: '';
-    position: absolute;
-    top: 0; left: 0; right: 0;
-    height: 4px;
-    background: linear-gradient(90deg, #5C7E60, #8BAF8E, #B8D1BA);
+    display: none;
 }
 
 .price-block.highlight {
-    border-color: #5C7E60;
-    box-shadow: 0 4px 24px rgba(92,126,96,0.18);
+    border-bottom: 1px solid #CEC6BA;
+    box-shadow: none;
 }
 
 .new-price-tag {
-    background: #FFF3E0;
-    border: 1px solid #FFB74D;
-    border-radius: 8px;
-    padding: 10px 16px;
-    font-size: 0.8rem;
-    color: #E65100;
+    display: inline-block;
+    background: none;
+    border: none;
+    border-bottom: 1px solid #FFB74D;
+    border-radius: 0;
+    padding: 0 0 2px;
+    font-size: 0.78rem;
+    color: #9A4F00;
     margin-bottom: 16px;
-    text-align: center;
-    letter-spacing: 0.05em;
+    text-align: left;
+    letter-spacing: 0.08em;
 }
 
 .payment-img-placeholder {
@@ -916,10 +931,11 @@ body.page-menu {
 }
 
 .price-thead {
-    font-size: 0.72rem;
-    letter-spacing: 0.05em;
-    color: #8BAF8E;
-    padding: 0 20px 2px;
+    font-size: 0.68rem;
+    letter-spacing: 0.1em;
+    color: #9A9080;
+    padding: 0 20px 10px;
+    border-bottom: 1px solid #CEC6BA;
 }
 
 .price-thead span:not(:first-child) {
@@ -927,21 +943,23 @@ body.page-menu {
 }
 
 .price-trow {
-    background: #F7F3EC;
-    border-radius: 8px;
-    padding: 14px 20px;
-    border-left: 3px solid #8BAF8E;
+    background: transparent;
+    border-radius: 0;
+    padding: 13px 20px;
+    border-left: none;
+    border-bottom: 1px solid #DDD5C8;
+    margin-bottom: 0;
 }
 
 .price-trow--new {
-    background: linear-gradient(135deg, #E4EFE4, #F0F7F0);
-    border-left: 3px solid #5C7E60;
+    background: transparent;
+    border-left: none;
 }
 
 .price-trow span:first-child {
     font-size: 0.95rem;
-    font-weight: 700;
-    color: #3D3830;
+    font-weight: 400;
+    color: #2A2420;
 }
 
 .price-trow span:not(:first-child) {
@@ -1061,4 +1079,313 @@ body.page-menu {
     .price-block { padding: 20px; }
     .menu-nav-card__name { font-size: 0.95rem; }
     .menu-nav-card__img { flex-basis: 80px; width: 80px; height: 64px; }
+}
+
+/* 狭い画面での料金表（新規／リピーター）調整 */
+@media (max-width: 400px) {
+    .price-thead,
+    .price-trow { grid-template-columns: 0.9fr 1fr 1fr; gap: 6px; }
+
+    .price-thead { font-size: 0.6rem; }
+    .price-thead span,
+    .price-trow span { white-space: nowrap; }
+
+    .price-trow { padding: 12px 14px; }
+    .price-trow span:first-child { font-size: 0.9rem; }
+    .price-trow span:not(:first-child) { font-size: 0.98rem; }
+}
+
+/* ===== 高級感デザインアップグレード ===== */
+
+/* ── ページヒーロー ── */
+.page-hero {
+    background: linear-gradient(175deg, #EAE3D3 0%, #DDD5C0 100%);
+    padding: 150px 20px 56px;
+    position: relative;
+    overflow: hidden;
+}
+
+.page-hero::before {
+    content: '';
+    position: absolute;
+    top: 0; left: 0; right: 0;
+    height: 1px;
+    background: linear-gradient(90deg, transparent 5%, #C9A96E 50%, transparent 95%);
+}
+
+.page-hero::after {
+    content: '';
+    display: block;
+    width: 40px;
+    height: 1px;
+    background: linear-gradient(90deg, transparent, #C9A96E, transparent);
+    margin: 28px auto 0;
+}
+
+.page-title {
+    font-size: 1.4rem;
+    letter-spacing: 0.55em;
+    color: #2A2420;
+    font-weight: 400;
+}
+
+/* ── 戻るリンク ── */
+.back-link {
+    margin: 36px auto 20px;
+    padding: 0 28px;
+    color: #9A9080;
+    letter-spacing: 0.1em;
+    font-size: 0.77rem;
+}
+
+/* ── コース詳細 ── */
+.course-detail {
+    padding: 0 28px;
+}
+
+/* ── 料金ブロック ── */
+.price-block {
+    padding: 40px 0;
+    border-bottom: 1px solid #DDD5C8;
+    border-top: none;
+    background: transparent;
+}
+
+.price-block:first-child {
+    border-top: 1px solid #DDD5C8;
+}
+
+.price-block.highlight {
+    box-shadow: none;
+    background: transparent;
+}
+
+/* ── 英語サブタイトル（ゴールドアクセント） ── */
+.price-block__title-en {
+    display: block;
+    font-size: 0.58rem;
+    letter-spacing: 0.5em;
+    color: #C9A96E;
+    text-transform: uppercase;
+    margin-bottom: 8px;
+    padding-left: 0;
+}
+
+/* ── ブロックタイトル ── */
+.price-block__title {
+    font-size: 1.1rem;
+    letter-spacing: 0.25em;
+    color: #2A2420;
+    font-weight: 400;
+    margin-bottom: 22px;
+    padding-bottom: 0;
+    border-left: none;
+    padding-left: 0;
+}
+
+.price-block__title::after {
+    content: '';
+    display: block;
+    width: 28px;
+    height: 1px;
+    background: linear-gradient(90deg, #C9A96E, transparent);
+    margin-top: 14px;
+}
+
+/* ── 新規限定タグ ── */
+.new-price-tag {
+    display: inline-block;
+    background: none;
+    border: none;
+    border-bottom: 1px solid #C9A96E;
+    border-radius: 0;
+    padding: 0 0 3px;
+    font-size: 0.73rem;
+    color: #9A6F2A;
+    margin-bottom: 18px;
+    letter-spacing: 0.1em;
+}
+
+/* ── 料金行 ── */
+.price-row {
+    padding: 15px 0;
+    border-bottom: 1px solid #ECE6DB;
+    margin-bottom: 0;
+    background: transparent;
+    border-radius: 0;
+    border-left: none;
+}
+
+.price-row:last-child {
+    border-bottom: none;
+}
+
+.price-row.featured {
+    background: transparent;
+    border-left: none;
+}
+
+/* ── ラベル ── */
+.price-label {
+    font-size: 0.88rem;
+    color: #3D3830;
+    letter-spacing: 0.06em;
+    font-weight: 400;
+}
+
+/* ── 価格値 ── */
+.price-value {
+    font-size: 1.15rem;
+    color: #3A5C3E;
+    font-weight: 700;
+    letter-spacing: 0.03em;
+}
+
+/* ── 料金表ヘッダー ── */
+.price-thead {
+    font-size: 0.62rem;
+    color: #C9A96E;
+    letter-spacing: 0.2em;
+    padding: 0 0 10px;
+    border-bottom: 1px solid #DDD5C8;
+}
+
+/* ── 料金表行 ── */
+.price-trow {
+    padding: 14px 0;
+    border-bottom: 1px solid #ECE6DB;
+    background: transparent;
+    border-radius: 0;
+    border-left: none;
+    margin-bottom: 0;
+}
+
+.price-trow:last-child {
+    border-bottom: none;
+}
+
+.price-trow--new {
+    background: transparent;
+    border-left: none;
+}
+
+.price-trow span:first-child {
+    font-size: 0.9rem;
+    color: #3D3830;
+    font-weight: 400;
+}
+
+.price-trow span:not(:first-child) {
+    font-size: 1.0rem;
+    color: #3A5C3E;
+    font-weight: 700;
+}
+
+/* ── price-note ── */
+.price-note {
+    background: linear-gradient(135deg, #FAF6EE 0%, #F4EDE0 100%);
+    border-left: 2px solid #C9A96E;
+    border-radius: 0 8px 8px 0;
+    color: #5A5148;
+    margin-top: 22px;
+    font-size: 0.78rem;
+}
+
+/* ── サブバッジ ── */
+.price-block__sub {
+    background: none;
+    color: #C9A96E;
+    border: 1px solid #C9A96E;
+    border-radius: 2px;
+    padding: 3px 16px;
+    font-size: 0.72rem;
+    font-weight: 400;
+    letter-spacing: 0.2em;
+    margin: 14px 0 12px;
+}
+
+/* ── キャンセルポリシー ── */
+.cancel-policy {
+    background: #FFF8EE;
+    border-color: #C9A96E;
+    color: #8A6523;
+}
+
+/* ── 予約CTA ── */
+.price-cta {
+    padding: 52px 20px 90px;
+}
+
+.price-cta p {
+    letter-spacing: 0.15em;
+    font-size: 0.85rem;
+    color: #9A9080;
+    margin-bottom: 24px;
+}
+
+/* ── スマホ調整 ── */
+@media (max-width: 768px) {
+    .page-title {
+        font-size: 1.2rem;
+        letter-spacing: 0.35em;
+    }
+    .course-detail {
+        padding: 0 20px;
+    }
+    .price-block {
+        padding: 32px 0;
+    }
+    .back-link {
+        margin: 24px auto 12px;
+        padding: 0 20px;
+    }
+}
+
+/* ===== アニメーション ===== */
+
+/* ヒーロータイトル：フェードアップ */
+@keyframes luxFadeUp {
+    from { opacity: 0; transform: translateY(14px); }
+    to   { opacity: 1; transform: translateY(0); }
+}
+
+/* ゴールドラインが横に伸びる */
+@keyframes goldLineExpand {
+    from { width: 0; }
+    to   { width: 40px; }
+}
+
+/* ヒーロー上部のゴールドライン（スケール） */
+@keyframes goldTopScale {
+    from { transform: scaleX(0); opacity: 0; }
+    to   { transform: scaleX(1); opacity: 1; }
+}
+
+.page-menu .page-title {
+    opacity: 0;
+    animation: luxFadeUp 2.2s cubic-bezier(0.25, 0.46, 0.45, 0.94) 0.4s forwards;
+}
+
+.page-menu .page-hero::before {
+    transform-origin: center;
+    animation: goldTopScale 2.4s cubic-bezier(0.25, 0.46, 0.45, 0.94) 0.2s forwards;
+    opacity: 0;
+}
+
+.page-menu .page-hero::after {
+    width: 0;
+    animation: goldLineExpand 1.8s cubic-bezier(0.25, 0.46, 0.45, 0.94) 1.8s forwards;
+}
+
+/* スクロール入場アニメーション用クラス */
+.lux-fade {
+    opacity: 0;
+    transform: translateY(20px);
+    transition: opacity 1.6s cubic-bezier(0.25, 0.46, 0.45, 0.94),
+                transform 1.6s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+}
+
+.lux-fade.is-visible {
+    opacity: 1;
+    transform: translateY(0);
 }
