@@ -1008,20 +1008,20 @@ body.page-menu {
 .menu-nav {
     max-width: 600px;
     margin: 0 auto;
-    padding: 0 20px 40px;
+    padding: 0 20px 48px;
     display: flex;
     flex-direction: column;
-    gap: 16px;
+    gap: 20px;
 }
 
 .menu-nav-card {
     display: flex;
     align-items: center;
-    gap: 18px;
+    gap: 22px;
     background: #fff;
     border: 1px solid #B8D1BA;
     border-radius: 14px;
-    padding: 14px;
+    padding: 18px 20px;
     text-decoration: none;
     box-shadow: 0 4px 16px rgba(92,126,96,0.08);
     transition: 0.3s;
@@ -1038,9 +1038,9 @@ body.page-menu {
 }
 
 .menu-nav-card__img {
-    flex: 0 0 96px;
-    width: 96px;
-    height: 72px;
+    flex: 0 0 116px;
+    width: 116px;
+    height: 88px;
     border-radius: 10px;
     object-fit: cover;
 }
@@ -1063,22 +1063,22 @@ body.page-menu {
 }
 
 .menu-nav-card__name {
-    font-size: 1.05rem;
+    font-size: 1.1rem;
     font-weight: 700;
     color: #3D3830;
-    letter-spacing: 0.05em;
+    letter-spacing: 0.06em;
 }
 
 .menu-nav-card__arrow {
     color: #8BAF8E;
-    font-size: 1.4rem;
+    font-size: 1.5rem;
     line-height: 1;
 }
 
 @media (max-width: 768px) {
-    .price-block { padding: 20px; }
-    .menu-nav-card__name { font-size: 0.95rem; }
-    .menu-nav-card__img { flex-basis: 80px; width: 80px; height: 64px; }
+    .menu-nav-card { padding: 16px 18px; gap: 18px; }
+    .menu-nav-card__name { font-size: 1.0rem; }
+    .menu-nav-card__img { flex-basis: 90px; width: 90px; height: 72px; }
 }
 
 /* 狭い画面での料金表（新規／リピーター）調整 */
@@ -1145,7 +1145,7 @@ body.page-menu {
 
 /* ── 料金ブロック ── */
 .price-block {
-    padding: 40px 0;
+    padding: 46px 0;
     border-bottom: 1px solid #DDD5C8;
     border-top: none;
     background: transparent;
@@ -1163,21 +1163,21 @@ body.page-menu {
 /* ── 英語サブタイトル（ゴールドアクセント） ── */
 .price-block__title-en {
     display: block;
-    font-size: 0.58rem;
-    letter-spacing: 0.5em;
+    font-size: 0.62rem;
+    letter-spacing: 0.45em;
     color: #C9A96E;
     text-transform: uppercase;
-    margin-bottom: 8px;
+    margin-bottom: 10px;
     padding-left: 0;
 }
 
 /* ── ブロックタイトル ── */
 .price-block__title {
-    font-size: 1.1rem;
-    letter-spacing: 0.25em;
+    font-size: 1.25rem;
+    letter-spacing: 0.2em;
     color: #2A2420;
     font-weight: 400;
-    margin-bottom: 22px;
+    margin-bottom: 28px;
     padding-bottom: 0;
     border-left: none;
     padding-left: 0;
@@ -1208,7 +1208,7 @@ body.page-menu {
 
 /* ── 料金行 ── */
 .price-row {
-    padding: 15px 0;
+    padding: 17px 0;
     border-bottom: 1px solid #ECE6DB;
     margin-bottom: 0;
     background: transparent;
@@ -1227,15 +1227,15 @@ body.page-menu {
 
 /* ── ラベル ── */
 .price-label {
-    font-size: 0.88rem;
+    font-size: 0.97rem;
     color: #3D3830;
-    letter-spacing: 0.06em;
+    letter-spacing: 0.05em;
     font-weight: 400;
 }
 
 /* ── 価格値 ── */
 .price-value {
-    font-size: 1.15rem;
+    font-size: 1.28rem;
     color: #3A5C3E;
     font-weight: 700;
     letter-spacing: 0.03em;
@@ -1243,16 +1243,16 @@ body.page-menu {
 
 /* ── 料金表ヘッダー ── */
 .price-thead {
-    font-size: 0.62rem;
+    font-size: 0.68rem;
     color: #C9A96E;
-    letter-spacing: 0.2em;
-    padding: 0 0 10px;
+    letter-spacing: 0.22em;
+    padding: 0 0 12px;
     border-bottom: 1px solid #DDD5C8;
 }
 
 /* ── 料金表行 ── */
 .price-trow {
-    padding: 14px 0;
+    padding: 16px 0;
     border-bottom: 1px solid #ECE6DB;
     background: transparent;
     border-radius: 0;
@@ -1270,13 +1270,13 @@ body.page-menu {
 }
 
 .price-trow span:first-child {
-    font-size: 0.9rem;
+    font-size: 0.97rem;
     color: #3D3830;
     font-weight: 400;
 }
 
 .price-trow span:not(:first-child) {
-    font-size: 1.0rem;
+    font-size: 1.12rem;
     color: #3A5C3E;
     font-weight: 700;
 }
@@ -1287,8 +1287,10 @@ body.page-menu {
     border-left: 2px solid #C9A96E;
     border-radius: 0 8px 8px 0;
     color: #5A5148;
-    margin-top: 22px;
-    font-size: 0.78rem;
+    margin-top: 26px;
+    font-size: 0.82rem;
+    line-height: 2.1;
+    padding: 18px 22px;
 }
 
 /* ── サブバッジ ── */
@@ -1333,7 +1335,26 @@ body.page-menu {
         padding: 0 20px;
     }
     .price-block {
-        padding: 32px 0;
+        padding: 36px 0;
+    }
+    .price-block__title {
+        font-size: 1.1rem;
+        letter-spacing: 0.15em;
+    }
+    .price-label {
+        font-size: 0.92rem;
+    }
+    .price-value {
+        font-size: 1.15rem;
+    }
+    .price-trow span:first-child {
+        font-size: 0.92rem;
+    }
+    .price-trow span:not(:first-child) {
+        font-size: 1.05rem;
+    }
+    .price-row {
+        padding: 15px 0;
     }
     .back-link {
         margin: 24px auto 12px;
@@ -1388,4 +1409,29 @@ body.page-menu {
 .lux-fade.is-visible {
     opacity: 1;
     transform: translateY(0);
+}
+
+/* ── Conceptセクション（#aboutのみに適用される固有ルール） ── */
+#about.container {
+    max-width: 680px;
+    text-align: left;
+    padding: 90px 40px;
+}
+#about.container .section-title {
+    text-align: center;
+}
+#about.container p {
+    font-size: 0.95rem;
+    line-height: 2.5;
+    letter-spacing: 0.06em;
+    color: #5A5148;
+}
+@media (max-width: 768px) {
+    #about.container {
+        padding: 60px 24px;
+    }
+    #about.container p {
+        font-size: 0.92rem;
+        line-height: 2.3;
+    }
 }
